@@ -1,0 +1,48 @@
+.logo{
+    opacity: 1;
+    margin-left: 163px;
+}
+
+.navBar{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    grid-template-columns: 50% 45% 5%;
+    padding: 24px;
+    z-index: 2;
+}
+
+.navbar-inverse{
+    transition: all 0.2s ease;
+    background-color: white;
+    padding: 0px;
+}
+
+.navbar-reverse{
+    transition: all 0.2s ease;
+    padding: 24px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.ctaBtn{
+    padding: 13px 36px;
+    background: linear-gradient(to right, #9F62C9, #663399);
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+
+.navBtn:hover{
+    color: #663399;
+}
+
+.ctaBtn:hover{
+    background-color: #663399 !important;
+}

@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="formInput">
+        <p style="text-align: center; font-size: 25px;">Eligibility Calculator</p>
+        <div class="wrapper" style="margin-top: 3rem;">
+            <div class="inner">
+                <p>Monthly Income</p>
+                <h4 class="bold">&#x20b9; {{monthlyIncome}}</h4>
+                <input class="range" (input)="monthInc($event)" type="range" min="100000" max="300000">
+                <datalist id="tickmarks">
+                    <option value="0" label="&#x20b9;100000"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50" label=""></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100" label="&#x20b9;300000"></option>
+                  </datalist>
+            </div>
+            <div class="inner">
+                <p>Monthly Expense</p>
+                <h4 class="bold">&#x20b9; {{monthlyExpense}}</h4>
+                <input class="range" (input)="monthExp($event)" type="range" min="100000" max="300000">
+            </div>
+            <div class="inner">
+                <p>Repayment Tenure</p>
+                <mat-select value="6" class="bold">
+                    <mat-option value="3">3 Months</mat-option>
+                    <mat-option value="6">6 Months</mat-option>
+                    <mat-option value="9">9 Months</mat-option>
+                    <mat-option value="12">12 Months</mat-option>
+                </mat-select>
+            </div>
+            <div class="inner">
+                <span>Do you have any existing loans?<mat-slide-toggle style="margin-left: 1rem;" color="primary" (change)="existingLoan = !existingLoan"></mat-slide-toggle></span>
+            </div>
+            <div *ngIf="existingLoan">
+                <mat-form-field style="width: 100%;">
+                    <mat-label>EMI of existing loan (Optional)</mat-label>
+                    <input class="bold" style="font-size: 25px;" matInput value="&#x20b9;15000">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <div class="formSubmit">
+        <div class="formInner">
+            <div class="inner" style="width: 100%;">
+                <p style="text-align: center;">Loan Amount</p>
+                <h4 style="text-align: center;">&#x20b9;100000</h4>
+            </div>
+            <div class="inner"style="width: 100%;">
+                <p style="text-align: center;">Your EMI will be</p>
+                <h4 style="text-align: center;">&#x20b9;15000</h4>
+            </div>
+            <a href="" class="submitBtn">Get Money</a>
+        </div>
+    </div>
+</div>

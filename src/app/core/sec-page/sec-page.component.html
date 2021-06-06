@@ -1,0 +1,25 @@
+<div class="cards">
+    <div class="flex">
+      <div class="card1" *ngFor= "let card of cardDetails">
+        <div class="pad-2">
+          <img src="{{card.imgSrc}}" alt="">
+          <p class="bold">{{card.cardTitle}}</p>
+          <p class="grey">{{card.cardBody}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="flexbox">
+      <div></div>
+      <div class="card2">
+        <img src="../../../assets/styleSvg/freelancer_feature_icon_6@1.5x.png" alt="">
+        <p class="bold">Ace your business finances</p>
+        <p class="grey">Manage banking, accounting & everything in between, on one platform</p>
+      </div>
+      <div class="card2">
+        <img src="../../../assets/styleSvg/Covid.png" alt="">
+        <p class="bold">Loans to fight COVID-19</p>
+        <p class="grey">Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</p>
+      </div>
+      <div></div>
+    </div>
+  </div>

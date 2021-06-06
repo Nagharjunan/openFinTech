@@ -1,0 +1,58 @@
+.nav{
+    width: 100%;
+    z-index: 2;
+}
+
+.mainBody{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main{
+    background-image: url(../assets/styleSvg/circle.svg), url(../assets/styleSvg/blob-small.svg), url(../assets/styleSvg/accounting_dots.svg), url(../assets/styleSvg/accounting_dots.svg);
+    background-repeat: no-repeat;
+    background-position: top -200px left 800px, top 213px left -179px, top 796px left 462px, top 936px left 1458px;
+    min-height: 110vh;
+}
+
+.largeCircle{
+    position: absolute;
+    top: 466px;
+    left: 136px;
+    width: 652px;
+    height: 365px;
+    opacity: 1;
+}
+
+.eligCalc{
+    position: absolute;
+    top: 270px;
+    left: 1100px;
+}
+
+.secondPage{
+    // min-height: 110vh;
+    background-image: url(../assets/styleSvg/sol_wave_bg.svg);
+    background-repeat: no-repeat;
+    background-position: top 200px left 1px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+h3{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+hr{
+    border: 2px solid black;
+    width: 10.5rem;
+    margin: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
