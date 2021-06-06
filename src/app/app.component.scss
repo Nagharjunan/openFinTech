@@ -8,6 +8,12 @@
     grid-template-columns: 50% 50%;
 }
 
+.mainText{
+    position: absolute;
+    top: 270px;
+    left: 189px;
+}
+
 .main{
     background-image: url(../assets/styleSvg/circle.svg), url(../assets/styleSvg/blob-small.svg), url(../assets/styleSvg/accounting_dots.svg), url(../assets/styleSvg/accounting_dots.svg);
     background-repeat: no-repeat;

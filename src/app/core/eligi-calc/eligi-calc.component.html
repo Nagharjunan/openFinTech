@@ -7,7 +7,7 @@
                 <h4 class="bold">&#x20b9; {{monthlyIncome}}</h4>
                 <input class="range" (input)="monthInc($event)" type="range" min="100000" max="300000">
                 <datalist id="tickmarks">
-                    <option value="0" label="&#x20b9;100000"></option>
+                    <option value="0" class="grey" label="&#x20b9;100000"></option>
                     <option value="10"></option>
                     <option value="20"></option>
                     <option value="30"></option>
@@ -17,7 +17,7 @@
                     <option value="70"></option>
                     <option value="80"></option>
                     <option value="90"></option>
-                    <option value="100" label="&#x20b9;300000"></option>
+                    <option value="100" class="grey" label="&#x20b9;300000"></option>
                   </datalist>
             </div>
             <div class="inner">

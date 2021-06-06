@@ -85,7 +85,7 @@ option{
     width: 200px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: #663399;
+    background-color: #9F62C9;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -106,4 +106,9 @@ option{
     border: 2px solid #9F62C9;
     border-radius: 50px;
     margin-top: 1rem;
+}
+
+.submitBtn:hover{
+    color: #FFFFFF;
+    background-color: #663399;
 }
